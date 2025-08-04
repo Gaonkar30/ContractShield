@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: demo
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+server:
+  port: 8081
+
+contractshield:
+  clauses:
+    indemnity: '(?i)indemnity|indemnify|hold harmless'
+    arbitration: '(?i)arbitration'
+    penalty: '(?i)penalty for breach|liquidated damages'
+    sla: '(?i)service level agreement|uptime guarantee'
+    termination: '(?i)termination|terminate|end of agreement'
+    confidentiality: '(?i)confidential|non-disclosure|proprietary'
+    liability: '(?i)liability|liable|responsible for damages'
+    force_majeure: '(?i)force majeure|act of god|unforeseeable circumstances'
