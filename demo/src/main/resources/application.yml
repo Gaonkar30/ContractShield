@@ -50,3 +50,12 @@ contractshield:
     confidentiality: '(?i)confidential|non-disclosure|proprietary'
     liability: '(?i)liability|liable|responsible for damages'
     force_majeure: '(?i)force majeure|act of god|unforeseeable circumstances'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
