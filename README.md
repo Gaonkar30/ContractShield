@@ -28,7 +28,18 @@ Features
 Tech Stack
 ----------
 
-ComponentTechnology/Library**Framework**Spring Boot 3.5.4**Language**Java 21**API Layer**Spring Web (REST)**Database**PostgreSQL (AWS RDS)**Data Access**Spring Data JPA, Hibernate**File Storage**AWS S3**Text Extraction**Apache Tika**Deployment**Docker, AWS App Runner, AWS ECR**Networking**AWS VPC, NAT Gateway, VPC Endpoint**Utilities**Lombok, Jackson**Health & Metrics**Spring Boot ActuatorExport to Sheets
+### Component Technology/Library
+*  **Framework**: Spring Boot 3.5.4
+*  **Language**: Java 21
+*  **API Layer**: Spring Web (REST)
+*  **Database**: PostgreSQL (AWS RDS)
+*  **Data Access**: Spring Data JPA, Hibernate
+*  **File Storage**: AWS S3
+*  **Text Extraction**: Apache Tika
+*  **Deployment**: Docker, AWS App Runner, AWS ECR
+*  **Networking**: AWS VPC, NAT Gateway, VPC Endpoint
+*  **Utilities**: Lombok, Jackson
+*  **Health & Metrics**: Spring Boot Actuator
 
 Setup and Configuration
 -----------------------
@@ -50,13 +61,13 @@ Setup and Configuration
 
 Since H2 has been removed for a more production-like setup, you will need a local PostgreSQL instance running.
 
-1.  Bashgit clone cd contractshield/demo
+1.  git clone cd contractshield/demo
     
-2.  YAMLdatasource: url: jdbc:postgresql://localhost:5432/contractshield\_db username: your\_local\_username password: your\_local\_password
+2.  YAML datasource: url: jdbc:postgresql://localhost:5432/contractshield\_db username: your\_local\_username password: your\_local\_password
     
-3.  **Create the database:**In your PostgreSQL instance, create a new database named contractshield\_db.
+3.  Create the database: In your PostgreSQL instance, create a new database named contractshield\_db.
     
-4.  Bash./mvnw spring-boot:runThe application will be available at http://localhost:8081.
+4.  ./mvnw spring-boot:runThe application will be available at http://localhost:8081.
     
 
 API Endpoints
